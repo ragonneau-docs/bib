@@ -1,0 +1,34 @@
+# build.yml
+# Copyright 2023 Tom M. Ragonneau
+name: build
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  run:
+    name: Generate document
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+
+      - name: Compile document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: refs.tex
+          args: -file-line-error -halt-on-error -interaction=nonstopmode
+          pre_compile: tlmgr update --self && tlmgr update --all
+
+      - name: Store artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          path: refs.pdf
+          if-no-files-found: error

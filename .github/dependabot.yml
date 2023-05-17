@@ -1,0 +1,9 @@
+# dependabot.yml
+# Copyright 2023 Tom M. Ragonneau
+version: 2
+
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily

@@ -1,5 +1,5 @@
 ## Makefile
-## Copyright 2023, Tom M. Ragonneau
+## Copyright 2023 Tom M. Ragonneau
 LC := latexmk
 LCFLAGS := -file-line-error -halt-on-error -interaction=nonstopmode
 
