@@ -22,10 +22,13 @@
 %%% ====================================================================
 %%% Journal abbreviations
 %%% ====================================================================
-@string{j-csitam    = "CSIAM Trans. Appl. Math."}
-@string{j-oms       = "Optim. Methods Softw."}
-@string{j-siopt     = "SIAM J. Optim."}
-@string{j-sisc      = "SIAM J. Sci. Comput."}
+@string{j-csitam            = "CSIAM Trans. Appl. Math."}
+@string{j-mp                = "Math. Program."}
+@string{j-oms               = "Optim. Methods Softw."}
+@string{j-sinum             = "SIAM J. Numer. Anal."}
+@string{j-siopt             = "SIAM J. Optim."}
+@string{j-sirev             = "SIAM Rev."}
+@string{j-sisc              = "SIAM J. Sci. Comput."}
 
 %%% ====================================================================
 %%% Series abbreviations
@@ -34,67 +37,169 @@
 %%% ====================================================================
 %%% Departments/Institutions and their addresses
 %%% ====================================================================
+@string{inst-polyu          = "The Hong Kong Polytechnic University"}
+@string{inst-polyu:adr      = "Hong Kong SAR, China"}
+@string{inst-ucl            = "Universit{\'{e}} catholique de Louvain"}
+@string{inst-ucl:adr        = "Ottignies-Louvain-la-Neuve, Belgium"}
+@string{inst-uliege         = "Universit{\'{e}} de Li{\`{e}}ge"}
+@string{inst-uliege:adr     = "Li{\`{e}}ge, Belgium"}
 
 %%% ====================================================================
 %%% Publishers and their addresses
 %%% ====================================================================
+@string{pub-pup             = "Princeton University Press"}
+@string{pub-pup:adr         = "Princeton, New Jersey, United States"}
 
 %%% ====================================================================
 %%% Entries
 %%% ====================================================================
+@book{Absil_Mahony_Sepulchre_2008,
+    author                  = {Absil, P.-A. and Mahony, R. and Sepulchre, R.},
+    title                   = {Optimization Algorithms on Matrix Manifolds},
+    publisher               = pub-pup,
+    address                 = pub-pup:adr,
+    year                    = 2008,
+}
+
+@techreport{Absil_Etal_2009,
+    author                  = {Absil, P.-A. and Trumpf, J. and Mahony, R. and Andrews, B.},
+    title                   = {All roads lead to {Newton}: feasible second-order methods for equality-constrained optimization},
+    institution             = inst-ucl,
+    address                 = inst-ucl:adr,
+    number                  = {UCL-INMA-2009.024},
+    year                    = 2009,
+}
+
+@misc{Bai_Mei_2018,
+    author                  = {Bai, Y. and Mei, S.},
+    title                   = {Analysis of sequential quadratic programming through the lens of {Riemannian} optimization},
+    howpublished            = {\href{https://arxiv.org/abs/1805.08756}{arXiv:1805.08756}},
+    year                    = 2018,
+}
+
 @article{Gao_Etal_2018,
-    author          = {Gao, B. and Liu, X. and Chen, X. and Yuan, Y.},
-    title           = {A new first-order algorithmic framework for optimization problems with orthogonality constraints},
-    journal         = j-siopt,
-    volume          = 28,
-    number          = 1,
-    pages           = {302--332},
-    year            = 2018,
+    author                  = {Gao, B. and Liu, X. and Chen, X. and Yuan, Y.},
+    title                   = {A new first-order algorithmic framework for optimization problems with orthogonality constraints},
+    journal                 = j-siopt,
+    volume                  = 28,
+    number                  = 1,
+    pages                   = {302--332},
+    year                    = 2018,
 }
 
 @article{Gao_Liu_Yuan_2019,
-    author          = {Gao, B. and Liu, X. and Yuan, Y.},
-    title           = {Parallelizable algorithms for optimization problems with orthogonality constraints},
-    journal         = j-sisc,
-    volume          = 41,
-    number          = 3,
-    pages           = {A1949--A1983},
-    year            = 2019,
+    author                  = {Gao, B. and Liu, X. and Yuan, Y.},
+    title                   = {Parallelizable algorithms for optimization problems with orthogonality constraints},
+    journal                 = j-sisc,
+    volume                  = 41,
+    number                  = 3,
+    pages                   = {A1949--A1983},
+    year                    = 2019,
+}
+
+@article{Golub_Pereyra_1973,
+    author                  = {Golub, G. H. and Pereyra, V.},
+    title                   = {The differentiation of pseudo-inverses and nonlinear least squares problems whose variables separate},
+    journal                 = j-sinum,
+    volume                  = 10,
+    number                  = 2,
+    pages                   = {413--432},
+    year                    = 1973,
+}
+
+@article{Miller_Malick_2005,
+    author                  = {Miller, S. A. and Malick, J.},
+    title                   = {Newton methods for nonsmooth convex minimization: connections among $\mathcal{U}$-{Lagrangian}, {Riemannian} {Newton} and {SQP} methods},
+    journal                 = j-mp,
+    volume                  = 104,
+    number                  = {2--3},
+    pages                   = {609--633},
+    year                    = 2005,
+}
+
+@phdthesis{Mishra_2014,
+    author                  = {Mishra, B.},
+    title                   = {A Riemannian approach to large-scale constrained least-squares with symmetries},
+    school                  = inst-uliege,
+    address                 = inst-uliege:adr,
+    year                    = 2014,
+}
+
+@article{Mishra_Sepulchre_2016,
+    author                  = {Mishra, B. and Sepulchre, R.},
+    title                   = {Riemannian preconditioning},
+    journal                 = j-siopt,
+    volume                  = 26,
+    number                  = 1,
+    pages                   = {635--660},
+    year                    = 2016,
+}
+
+@phdthesis{Ragonneau_2022,
+    author                  = {Ragonneau, T. M.},
+    title                   = {Model-Based Derivative-Free Optimization Methods and Software},
+    school                  = inst-polyu,
+    address                 = inst-polyu:adr,
+    year                    = 2022,
+}
+
+@misc{Ragonneau_Zhang_2023a,
+    author                  = {Ragonneau, T. M. and Zhang, Z.},
+    title                   = {An optimal interpolation set for model-based derivative-free optimization methods},
+    howpublished            = {\href{https://arxiv.org/abs/2302.09992}{arXiv:2302.09992}},
+    year                    = 2023,
+}
+
+@misc{Ragonneau_Zhang_2023b,
+    author                  = {Ragonneau, T. M. and Zhang, Z.},
+    title                   = {{PDFO}: a cross-platform package for {Powell}'s derivative-free optimization solvers},
+    howpublished            = {\href{https://arxiv.org/abs/2302.13246}{arXiv:2302.13246}},
+    year                    = 2023,
+}
+
+@article{Stewart_1977,
+    author                  = {Stewart, G. W.},
+    title                   = {On the perturbation of pseudo-inverses, projections and linear least squares problems},
+    journal                 = j-sirev,
+    volume                  = 19,
+    number                  = 4,
+    pages                   = {634--662},
+    year                    = 1977,
 }
 
 @article{Wang_Gao_Liu_2021,
-    author          = {Wang, L. and Gao, B. and Liu, X.},
-    title           = {Multipliers correction methods for optimization problems over the stiefel manifold},
-    journal         = j-sisc,
-    volume          = 2,
-    number          = 3,
-    pages           = {508--531},
-    year            = 2021,
+    author                  = {Wang, L. and Gao, B. and Liu, X.},
+    title                   = {Multipliers correction methods for optimization problems over the stiefel manifold},
+    journal                 = j-sisc,
+    volume                  = 2,
+    number                  = 3,
+    pages                   = {508--531},
+    year                    = 2021,
 }
 
 @misc{Xiao_Liu_Yuan_2021a,
-    author          = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title           = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
-    howpublished    = {\href{https://arxiv.org/abs/2103.03514}{arXiv:2103.03514}},
-    year            = 2021,
+    author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
+    title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
+    howpublished            = {\href{https://arxiv.org/abs/2103.03514}{arXiv:2103.03514}},
+    year                    = 2021,
 }
 
 @article{Xiao_Liu_Yuan_2021b,
-    author          = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title           = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
-    journal         = j-siopt,
-    volume          = 31,
-    number          = 4,
-    pages           = {3097--3126},
-    year            = 2021,
+    author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
+    title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
+    journal                 = j-siopt,
+    volume                  = 31,
+    number                  = 4,
+    pages                   = {3097--3126},
+    year                    = 2021,
 }
 
 @article{Xiao_Liu_Yuan_2022,
-    author          = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title           = {A class of smooth exact penalty function methods for optimization problems with orthogonality constraints},
-    journal         = j-oms,
-    volume          = 37,
-    number          = 4,
-    pages           = {1205--1241},
-    year            = 2022,
+    author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
+    title                   = {A class of smooth exact penalty function methods for optimization problems with orthogonality constraints},
+    journal                 = j-oms,
+    volume                  = 37,
+    number                  = 4,
+    pages                   = {1205--1241},
+    year                    = 2022,
 }
