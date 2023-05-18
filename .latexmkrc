@@ -8,3 +8,9 @@ $dvi_mode = 0;
 
 # Run BibTeX/Biber to generate the BBL file
 $bibtex_use = 2;
+
+# Extra extensions to remove on clean up
+$clean_ext = "synctex.gz";
+
+# Timezone (used by datetime2)
+$ENV{"TZ"}="Asia/Hong_Kong";

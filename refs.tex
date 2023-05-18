@@ -2,8 +2,20 @@
 %% Copyright 2023 Tom M. Ragonneau
 \documentclass{article}
 \usepackage[a4paper]{geometry}
+
+% Manage culturally-determined typographical rules
+\usepackage[american]{babel}
+\usepackage{csquotes}
+
+% Subliminal refinements
 \usepackage{microtype}
 \usepackage[prevent-all]{widows-and-orphans}
+
+% Modify the typesets of the `\maketitle' and `\thanks' commands
+\usepackage{titling}
+
+% Formats for dates and times
+\usepackage[useregional,showzone=false]{datetime2}
 
 % Cross-referencing
 \usepackage[pdfusetitle,hyperfootnotes=false]{hyperref}
@@ -19,6 +31,7 @@
 \usepackage{lmodern}
 \usepackage[sf,bf]{titlesec}
 
+% Headings
 \title{Digital library}
 \author{Tom M. Ragonneau\thanks{
     Department of Applied Mathematics,
@@ -26,7 +39,7 @@
     Hung Hom, Kowloon, Hong Kong
     (\email{tom.ragonneau@polyu.edu.hk}).
 }}
-\date{\today}
+\date{\DTMnow}
 
 \begin{document}
 
