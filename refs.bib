@@ -2,8 +2,8 @@
 %%%  BibTeX-file{
 %%%     author          = "Tom M. Ragonneau",
 %%%     version         = "1.0.0",
-%%%     date            = "May 18, 2023",
-%%%     time            = "10:13:37 HKT",
+%%%     date            = "May 20, 2023",
+%%%     time            = "18:51:32 HKT",
 %%%     filename        = "refs.bib",
 %%%     address         = "Department of Applied Mathematics,
 %%%                        The Hong Kong Polytechnic University,
@@ -22,7 +22,9 @@
 %%% ====================================================================
 %%% Journal abbreviations
 %%% ====================================================================
+@string{j-as                = "Ann. Statist."}
 @string{j-csitam            = "CSIAM Trans. Appl. Math."}
+@string{j-ieeetsp           = "IEEE Trans. Signal Process."}
 @string{j-jsc               = "J. Sci. Comput."}
 @string{j-mp                = "Math. Program."}
 @string{j-oms               = "Optim. Methods Softw."}
@@ -31,10 +33,12 @@
 @string{j-siopt             = "SIAM J. Optim."}
 @string{j-sirev             = "SIAM Rev."}
 @string{j-sisc              = "SIAM J. Sci. Comput."}
+@String{j-toms              = "ACM Trans. Math. Software"}
 
 %%% ====================================================================
 %%% Series abbreviations
 %%% ====================================================================
+@string{s-cam               = "Classics Appl. Math."}
 
 %%% ====================================================================
 %%% Departments/Institutions and their addresses
@@ -51,6 +55,8 @@
 %%% ====================================================================
 @string{pub-pup             = "Princeton University Press"}
 @string{pub-pup:adr         = "Princeton, New Jersey, United States"}
+@String{pub-siam            = "Society for Industrial and Applied Mathematics"}
+@String{pub-siam:adr        = "Philadelphia, Pennsylvania, United States"}
 
 %%% ====================================================================
 %%% Entries
@@ -77,6 +83,35 @@
     title                   = {Analysis of sequential quadratic programming through the lens of {Riemannian} optimization},
     howpublished            = {\href{https://arxiv.org/abs/1805.08756}{arXiv:1805.08756}},
     year                    = 2018,
+}
+
+@article{Cai_Ma_Wu_2013,
+    author                  = {Cai, T. T. and Ma, Z. and Wu, Y.},
+    title                   = {Sparse {PCA}: optimal rates and adaptive estimation},
+    journal                 = j-as,
+    volume                  = 41,
+    number                  = 6,
+    pages                   = {3074--3110},
+    year                    = 2013,
+}
+
+@article{Chen_Etal_2020,
+    author                  = {Chen, S. and Ma, S. and So, A. M.-C. and Zhang, T.},
+    title                   = {Proximal gradient method for nonsmooth optimization over the {Stiefel} manifold},
+    journal                 = j-siopt,
+    volume                  = 30,
+    number                  = 1,
+    pages                   = {210--239},
+    year                    = 2020,
+}
+
+@book{Clarke_1990,
+    author                  = {Clarke, F. H.},
+    title                   = {Optimization and Nonsmooth Analysis},
+    series                  = s-cam,
+    publisher               = pub-siam,
+    address                 = pub-siam:adr,
+    year                    = 1990,
 }
 
 @article{Gao_Etal_2018,
@@ -149,6 +184,16 @@
     year                    = 2015,
 }
 
+@article{Ma_2013,
+    author                  = {Ma, Z.},
+    title                   = {Sparse principal component analysis and iterative thresholding},
+    journal                 = j-as,
+    volume                  = 41,
+    number                  = 2,
+    pages                   = {772--801},
+    year                    = 2013,
+}
+
 @article{Miller_Malick_2005,
     author                  = {Miller, S. A. and Malick, J.},
     title                   = {Newton methods for nonsmooth convex minimization: connections among $\mathcal{U}$-{Lagrangian}, {Riemannian} {Newton} and {SQP} methods},
@@ -209,6 +254,16 @@
     year                    = 1977,
 }
 
+@article{Ulfarsson_Solo_2008,
+    author                  = {Ulfarsson, M. O. and Solo, V.},
+    title                   = {Sparse variable {PCA} using geodesic steepest descent},
+    journal                 = j-ieeetsp,
+    volume                  = 56,
+    number                  = 12,
+    pages                   = {5823--5832},
+    year                    = 2008,
+}
+
 @article{Wang_Gao_Liu_2021,
     author                  = {Wang, L. and Gao, B. and Liu, X.},
     title                   = {Multipliers correction methods for optimization problems over the stiefel manifold},
@@ -239,16 +294,19 @@
     year                    = 2013,
 }
 
-@misc{Xiao_Liu_Yuan_2021a,
+@article{Xiao_Liu_Yuan_2021a,
     author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
     title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
-    howpublished            = {\href{https://arxiv.org/abs/2103.03514}{arXiv:2103.03514}},
+    journal                 = j-siopt,
+    volume                  = 31,
+    number                  = 4,
+    pages                   = {3097--3126},
     year                    = 2021,
 }
 
 @article{Xiao_Liu_Yuan_2021b,
     author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
+    title                   = {Exact penalty function for $\ell_{2, 1}$ norm minimization over the {Stiefel} manifold},
     journal                 = j-siopt,
     volume                  = 31,
     number                  = 4,
@@ -264,4 +322,14 @@
     number                  = 4,
     pages                   = {1205--1241},
     year                    = 2022,
+}
+
+@article{Yang_Etal_2009,
+    author                  = {Yang, C. and Meza, J. C. and Lee, B. and Wang, L.-W.},
+    title                   = {{KSSOLV}---a {MATLAB} toolbox for solving the {Kohn}-{Sham} equations},
+    journal                 = j-toms,
+    volume                  = 36,
+    number                  = 2,
+    pages                   = {1--35},
+    year                    = 2009,
 }
