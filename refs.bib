@@ -2,8 +2,8 @@
 %%%  BibTeX-file{
 %%%     author          = "Tom M. Ragonneau",
 %%%     version         = "1.0.0",
-%%%     date            = "May 20, 2023",
-%%%     time            = "18:51:32 HKT",
+%%%     date            = "May 21, 2023",
+%%%     time            = "12:40:26 HKT",
 %%%     filename        = "refs.bib",
 %%%     address         = "Department of Applied Mathematics,
 %%%                        The Hong Kong Polytechnic University,
@@ -24,7 +24,9 @@
 %%% ====================================================================
 @string{j-as                = "Ann. Statist."}
 @string{j-csitam            = "CSIAM Trans. Appl. Math."}
+@string{j-fcm               = "Found. Comput. Math."}
 @string{j-ieeetsp           = "IEEE Trans. Signal Process."}
+@string{j-jmlr              = "J. Mach. Learn. Res."}
 @string{j-jsc               = "J. Sci. Comput."}
 @string{j-mp                = "Math. Program."}
 @string{j-oms               = "Optim. Methods Softw."}
@@ -53,14 +55,26 @@
 %%% ====================================================================
 %%% Publishers and their addresses
 %%% ====================================================================
+@String{pub-ap              = "Academic Press"}
+@String{pub-ap:adr-ny       = "New York, New York, USA"}
 @string{pub-pup             = "Princeton University Press"}
-@string{pub-pup:adr         = "Princeton, New Jersey, United States"}
+@string{pub-pup:adr         = "Princeton, New Jersey, USA"}
 @String{pub-siam            = "Society for Industrial and Applied Mathematics"}
-@String{pub-siam:adr        = "Philadelphia, Pennsylvania, United States"}
+@String{pub-siam:adr        = "Philadelphia, Pennsylvania, USA"}
 
 %%% ====================================================================
 %%% Entries
 %%% ====================================================================
+@article{Absil_Baker_Gallivan_2007,
+    author                  = {Absil, P.-A. and Baker, C. G. and Gallivan, K. A.},
+    title                   = {Trust-region methods on {R}iemannian manifolds},
+    journal                 = j-fcm,
+    volume                  = 7,
+    number                  = 3,
+    pages                   = {303--330},
+    year                    = 2007,
+}
+
 @book{Absil_Mahony_Sepulchre_2008,
     author                  = {Absil, P.-A. and Mahony, R. and Sepulchre, R.},
     title                   = {Optimization Algorithms on Matrix Manifolds},
@@ -71,7 +85,7 @@
 
 @techreport{Absil_Etal_2009,
     author                  = {Absil, P.-A. and Trumpf, J. and Mahony, R. and Andrews, B.},
-    title                   = {All roads lead to {Newton}: feasible second-order methods for equality-constrained optimization},
+    title                   = {All roads lead to {N}ewton: feasible second-order methods for equality-constrained optimization},
     institution             = inst-ucl,
     address                 = inst-ucl:adr,
     number                  = {UCL-INMA-2009.024},
@@ -80,9 +94,19 @@
 
 @misc{Bai_Mei_2018,
     author                  = {Bai, Y. and Mei, S.},
-    title                   = {Analysis of sequential quadratic programming through the lens of {Riemannian} optimization},
+    title                   = {Analysis of sequential quadratic programming through the lens of {R}iemannian optimization},
     howpublished            = {\href{https://arxiv.org/abs/1805.08756}{arXiv:1805.08756}},
     year                    = 2018,
+}
+
+@article{Boumal_Etal_2014,
+    author                  = {Boumal, N. and Mishra, B. and Absil, P.-A. and Sepulchre, R.},
+    title                   = {{M}anopt, a {M}atlab toolbox for optimization on manifolds},
+    journal                 = j-jmlr,
+    volume                  = 15,
+    number                  = 42,
+    pages                   = {1455--1459},
+    year                    = 2014,
 }
 
 @article{Cai_Ma_Wu_2013,
@@ -97,7 +121,7 @@
 
 @article{Chen_Etal_2020,
     author                  = {Chen, S. and Ma, S. and So, A. M.-C. and Zhang, T.},
-    title                   = {Proximal gradient method for nonsmooth optimization over the {Stiefel} manifold},
+    title                   = {Proximal gradient method for nonsmooth optimization over the {S}tiefel manifold},
     journal                 = j-siopt,
     volume                  = 30,
     number                  = 1,
@@ -146,7 +170,7 @@
 
 @article{Jiang_Dai_2015,
     author                  = {Jiang, B. and Dai, Y. H.},
-    title                   = {A framework of constraint preserving update schemes for optimization on {Stiefel} manifold},
+    title                   = {A framework of constraint preserving update schemes for optimization on {S}tiefel manifold},
     journal                 = j-mp,
     volume                  = 153,
     number                  = 2,
@@ -176,7 +200,7 @@
 
 @article{Liu_Wen_Zhang_2015,
     author                  = {Liu, X. and Wen, Z. and Zhang, Y.},
-    title                   = {An efficient {Gauss}--{Newton} algorithm for symmetric low-rank product matrix approximations},
+    title                   = {An efficient {G}auss--{N}ewton algorithm for symmetric low-rank product matrix approximations},
     journal                 = j-siopt,
     volume                  = 25,
     number                  = 3,
@@ -196,7 +220,7 @@
 
 @article{Miller_Malick_2005,
     author                  = {Miller, S. A. and Malick, J.},
-    title                   = {Newton methods for nonsmooth convex minimization: connections among $\mathcal{U}$-{Lagrangian}, {Riemannian} {Newton} and {SQP} methods},
+    title                   = {Newton methods for nonsmooth convex minimization: connections among $\mathcal{U}$-{L}agrangian, {R}iemannian {N}ewton and {SQP} methods},
     journal                 = j-mp,
     volume                  = 104,
     number                  = {2--3},
@@ -206,7 +230,7 @@
 
 @phdthesis{Mishra_2014,
     author                  = {Mishra, B.},
-    title                   = {A Riemannian approach to large-scale constrained least-squares with symmetries},
+    title                   = {A {R}iemannian approach to large-scale constrained least-squares with symmetries},
     school                  = inst-uliege,
     address                 = inst-uliege:adr,
     year                    = 2014,
@@ -214,12 +238,23 @@
 
 @article{Mishra_Sepulchre_2016,
     author                  = {Mishra, B. and Sepulchre, R.},
-    title                   = {Riemannian preconditioning},
+    title                   = {{R}iemannian preconditioning},
     journal                 = j-siopt,
     volume                  = 26,
     number                  = 1,
     pages                   = {635--660},
     year                    = 2016,
+}
+
+@incollection{Powell_1969,
+    author                  = {Powell, M. J. D.},
+    title                   = {A method for nonlinear constraints in minimization problems},
+    booktitle               = {Optimization},
+    editor                  = {Fletcher, R.},
+    publisher               = pub-ap,
+    address                 = pub-ap:adr-ny,
+    pages                   = {283-298},
+    year                    = 1969,
 }
 
 @phdthesis{Ragonneau_2022,
@@ -239,7 +274,7 @@
 
 @misc{Ragonneau_Zhang_2023b,
     author                  = {Ragonneau, T. M. and Zhang, Z.},
-    title                   = {{PDFO}: a cross-platform package for {Powell}'s derivative-free optimization solvers},
+    title                   = {{PDFO}: a cross-platform package for {P}owell's derivative-free optimization solvers},
     howpublished            = {\href{https://arxiv.org/abs/2302.13246}{arXiv:2302.13246}},
     year                    = 2023,
 }
@@ -296,7 +331,7 @@
 
 @article{Xiao_Liu_Yuan_2021a,
     author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {Stiefel} manifold},
+    title                   = {A penalty-free infeasible approach for a class of nonsmooth optimization problems over the {S}tiefel manifold},
     journal                 = j-siopt,
     volume                  = 31,
     number                  = 4,
@@ -306,7 +341,7 @@
 
 @article{Xiao_Liu_Yuan_2021b,
     author                  = {Xiao, N. and Liu, X. and Yuan, Y.},
-    title                   = {Exact penalty function for $\ell_{2, 1}$ norm minimization over the {Stiefel} manifold},
+    title                   = {Exact penalty function for $\ell_{2, 1}$ norm minimization over the {S}tiefel manifold},
     journal                 = j-siopt,
     volume                  = 31,
     number                  = 4,
@@ -326,7 +361,7 @@
 
 @article{Yang_Etal_2009,
     author                  = {Yang, C. and Meza, J. C. and Lee, B. and Wang, L.-W.},
-    title                   = {{KSSOLV}---a {MATLAB} toolbox for solving the {Kohn}-{Sham} equations},
+    title                   = {{KSSOLV}---a {MATLAB} toolbox for solving the {K}ohn-{S}ham equations},
     journal                 = j-toms,
     volume                  = 36,
     number                  = 2,
