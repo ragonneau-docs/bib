@@ -2,8 +2,8 @@
 %%%  BibTeX-file{
 %%%     author          = "Tom M. Ragonneau",
 %%%     version         = "1.0.0",
-%%%     date            = "May 21, 2023",
-%%%     time            = "12:40:26 HKT",
+%%%     date            = "June 09, 2023",
+%%%     time            = "16:24:43 HKT",
 %%%     filename        = "refs.bib",
 %%%     address         = "Department of Applied Mathematics,
 %%%                        The Hong Kong Polytechnic University,
@@ -22,14 +22,17 @@
 %%% ====================================================================
 %%% Journal
 %%% ====================================================================
+@string{j-an                = "Acta Numer."}
 @string{j-as                = "Ann. Statist."}
 @string{j-csitam            = "CSIAM Trans. Appl. Math."}
 @string{j-fcm               = "Found. Comput. Math."}
 @string{j-ieeetsp           = "IEEE Trans. Signal Process."}
 @string{j-ima-jna           = "IMA J. Numer. Anal."}
 @string{j-jmlr              = "J. Mach. Learn. Res."}
+@string{j-jota              = "J. Optim. Theory Appl."}
 @string{j-jsc               = "J. Sci. Comput."}
 @string{j-mp                = "Math. Program."}
+@string{j-nm                = "Numer. Math."}
 @string{j-oms               = "Optim. Methods Softw."}
 @string{j-prev              = "Phys. Rev."}
 @String{j-simax             = "SIAM J. Matrix Anal. Appl."}
@@ -43,12 +46,17 @@
 %%% Series
 %%% ====================================================================
 @string{s-cam               = "Classics in Applied Mathematics"}
+@string{s-ifip              = "The International Federation for Information Processing"}
+@string{s-imavma            = "The IMA Volumes in Mathematics and its Applications"}
+@string{s-lnm               = "Lecture Notes in Mathematics"}
 @string{s-mia               = "Mathematics and Its Applications"}
 @string{s-noia              = "Nonconvex Optimization and Its Applications"}
 
 %%% ====================================================================
 %%% Departments/Institutions and their addresses
 %%% ====================================================================
+@string{inst-harvard        = "Harvard University"}
+@string{inst-harvard:adr    = "Cambridge, MA, USA"}
 @string{inst-polym          = "Polytechnique Montr{\'{e}}al"}
 @string{inst-polym:adr      = "Montreal, Quebec"}
 @string{inst-polyu          = "The Hong Kong Polytechnic University"}
@@ -57,6 +65,8 @@
 @string{inst-ucl:adr        = "Ottignies-Louvain-la-Neuve, Belgium"}
 @string{inst-uliege         = "Universit{\'{e}} de Li{\`{e}}ge"}
 @string{inst-uliege:adr     = "Li{\`{e}}ge, Belgium"}
+@string{inst-uw             = "University of Wisconsin"}
+@string{inst-uw:adr         = "Madison, WI, USA"}
 
 %%% ====================================================================
 %%% Publishers and their addresses
@@ -64,7 +74,7 @@
 @string{pub-aiaa            = "AIAA"}
 @string{pub-aiaa:adr-sl     = "St. Louis, MO, USA"}
 @String{pub-ap              = "Academic Press"}
-@String{pub-ap:adr-ny       = "New York, NY, USA"}
+@String{pub-ap:adr          = "New York, NY, USA"}
 @string{pub-cup             = "Cambridge University Press"}
 @string{pub-cup:adr         = "Cambridge, United Kingdom"}
 @string{pub-pup             = "Princeton University Press"}
@@ -73,7 +83,11 @@
 @String{pub-siam:adr        = "Philadelphia, PA, USA"}
 @String{pub-springer        = "Springer"}
 @String{pub-springer:adr-b  = "Boston, MA, USA"}
+@String{pub-springer:adr-bh = "Berlin, Heidelberg, Germany"}
 @String{pub-springer:adr-d  = "Dordrecht, Netherlands"}
+@String{pub-springer:adr-ny = "New York, NY, USA"}
+@string{pub-wiley           = "Wiley"}
+@string{pub-wiley:adr-ny    = "New York, NY, USA"}
 
 %%% ====================================================================
 %%% Entries
@@ -122,6 +136,15 @@
     year                    = 2012,
 }
 
+@article{Boggs_Tolle_1995,
+    author                  = {Boggs, P. T. and Tolle, J. W.},
+    title                   = {Sequential Quadratic Programming},
+    journal                 = j-an,
+    volume                  = 4,
+    pages                   = {1--51},
+    year                    = 1995,
+}
+
 @article{Bojanczyk_Lutoborski_1999,
     author                  = {Bojanczyk, A. W. and Lutoborski, A.},
     title                   = {The {P}rocrustes problem for orthogonal {S}tiefel matrices},
@@ -140,6 +163,16 @@
     number                  = 42,
     pages                   = {1455--1459},
     year                    = 2014,
+}
+
+@article{Burke_1992,
+    author                  = {Burke, J. V.},
+    title                   = {A robust trust region method for constrained nonlinear programming problems},
+    journal                 = j-siopt,
+    volume                  = 2,
+    number                  = 2,
+    pages                   = {324--347},
+    year                    = 1992,
 }
 
 @article{Cai_Ma_Wu_2013,
@@ -272,6 +305,24 @@
     year                    = 2019,
 }
 
+@phdthesis{Garcia-Palomares_1973,
+    author                  = {Garc{\'{i}}a-Palomares, U. M.},
+    title                   = {Superlinearly convergent quasi-Newton methods for nonlinear programming},
+    school                  = inst-uw,
+    address                 = inst-uw:adr,
+    year                    = 1973,
+}
+
+@article{Garcia-Palomares_Mangasarian_1973,
+    author                  = {Garc{\'{i}}a-Palomares, U. M. and Mangasarian, O. L.},
+    title                   = {Superlinearly convergent quasi-newton algorithms for nonlinearly constrained optimization problems},
+    journal                 = j-mp,
+    volume                  = 11,
+    number                  = 1,
+    pages                   = {1--13},
+    year                    = 1978,
+}
+
 @mastersthesis{Garneau_2015,
     author                  = {Garneau, M. L.},
     title                   = {Modelling of a solar thermal power plant for benchmarking blackbox optimization solvers},
@@ -299,6 +350,19 @@
     year                    = 2019,
 }
 
+@inproceedings{Gill_Wong_2011,
+    author                  = {Gill, P. E. and Wong, E.},
+    title                   = {Sequential Quadratic Programming Methods},
+    booktitle               = {Mixed Integer Nonlinear Programming},
+    editor                  = {Lee, J. and Leyffer, S.},
+    series                  = s-imavma,
+    publisher               = pub-springer,
+    address                 = pub-springer:adr-ny,
+    volume                  = 154,
+    pages                   = {147--224},
+    year                    = 2011,
+}
+
 @article{Golub_Pereyra_1973,
     author                  = {Golub, G. H. and Pereyra, V.},
     title                   = {The differentiation of pseudo-inverses and nonlinear least squares problems whose variables separate},
@@ -307,6 +371,38 @@
     number                  = 2,
     pages                   = {413--432},
     year                    = 1973,
+}
+
+@incollection{Gould_Toint_2000,
+    author                  = {Gould, N. I. M. and Toint, Ph. L.},
+    title                   = {{SQP} methods for large-scale nonlinear programming},
+    booktitle               = {System Modelling and Optimization},
+    editor                  = {Powell, M. J. D. and Scholtes, S.},
+    series                  = s-ifip,
+    volume                  = 46,
+    publisher               = pub-springer,
+    address                 = pub-springer:adr-b,
+    year                    = 2000,
+}
+
+@article{Han_1976,
+    author                  = {Han, S.-P.},
+    title                   = {Superlinearly convergent variable metric algorithms for general nonlinear programming problems},
+    journal                 = j-mp,
+    volume                  = 11,
+    number                  = 1,
+    pages                   = {263--282},
+    year                    = 1976,
+}
+
+@article{Han_1977,
+    author                  = {Han, S.-P.},
+    title                   = {A globally convergent method for nonlinear programming},
+    journal                 = j-jota,
+    volume                  = 22,
+    number                  = 3,
+    pages                   = {297--309},
+    year                    = 1977,
 }
 
 @article{Jiang_Dai_2015,
@@ -393,9 +489,43 @@
     booktitle               = {Optimization},
     editor                  = {Fletcher, R.},
     publisher               = pub-ap,
-    address                 = pub-ap:adr-ny,
+    address                 = pub-ap:adr,
     pages                   = {283-298},
     year                    = 1969,
+}
+
+@article{Powell_1978a,
+    author                  = {Powell, M. J. D.},
+    title                   = {Algorithms for nonlinear constraints that use {L}agrangian functions},
+    journal                 = j-mp,
+    volume                  = 14,
+    number                  = 1,
+    pages                   = {224--248},
+    year                    = 1978,
+}
+
+@inproceedings{Powell_1978b,
+    author                  = {Powell, M. J. D.},
+    title                   = {The convergence of variable metric methods for nonlinearly constrained optimization calculations},
+    booktitle               = {Nonlinear Programming 3},
+    editor                  = {Mangasarian, O. L. and Meyer, R. R. and Robinson, S. M.},
+    publisher               = pub-ap,
+    address                 = pub-ap:adr,
+    pages                   = {27--63},
+    year                    = 1978,
+}
+
+@incollection{Powell_1978c,
+    author                  = {Powell, M. J. D.},
+    title                   = {A fast algorithm for nonlinearly constrained optimization calculations},
+    booktitle               = {Numerical Analysis},
+    editor                  = {Watson, G. A.},
+    series                  = s-lnm,
+    volume                  = 630,
+    publisher               = pub-springer,
+    address                 = pub-springer:adr-bh,
+    pages                   = {144--157},
+    year                    = 1978,
 }
 
 @incollection{Powell_1994,
@@ -456,6 +586,46 @@
     year                    = 2023,
 }
 
+@article{Robinson_1974,
+    author                  = {Robinson, S. M.},
+    title                   = {Perturbed {K}uhn-{T}ucker points and rates of convergence for a class of nonlinear-programming algorithms},
+    journal                 = j-mp,
+    volume                  = 7,
+    number                  = 1,
+    pages                   = {1--16},
+    year                    = 1974,
+}
+
+@article{Schittkowski_1981a,
+    author                  = {Schittkowski, K.},
+    title                   = {The nonlinear programming method of {W}ilson, {H}an, and {P}owell with an augmented {L}agrangian type line search function},
+    journal                 = j-nm,
+    volume                  = 38,
+    number                  = 1,
+    pages                   = {83--114},
+    year                    = 1981,
+}
+
+@article{Schittkowski_1981b,
+    author                  = {Schittkowski, K.},
+    title                   = {The nonlinear programming method of {W}ilson, {H}an, and {P}owell with an augmented {L}agrangian type line search function},
+    journal                 = j-nm,
+    volume                  = 38,
+    number                  = 1,
+    pages                   = {115--127},
+    year                    = 1981,
+}
+
+@incollection{Schittkowski_Yuan_2011,
+    author                  = {Schittkowski, K. and Yuan, Y.},
+    title                   = {Sequential quadratic programming methods},
+    booktitle               = {Wiley Encyclopedia of Operations Research and Management Science},
+    editor                  = {Cochran, J. J. and Cox, L. A. and Keskinocak, P. and Kharoufeh, J. P. and Smith, J. C.},
+    publisher               = pub-wiley,
+    address                 = pub-wiley:adr-ny,
+    year                    = 2011,
+}
+
 @article{Stewart_1977,
     author                  = {Stewart, G. W.},
     title                   = {On the perturbation of pseudo-inverses, projections and linear least squares problems},
@@ -511,6 +681,14 @@
     title                   = {{MNH}: a derivative-free optimization algorithm using minimal norm {H}essians},
     booktitle               = {Tenth Copper Mountain Conference on Iterative Methods},
     year                    = 2008,
+}
+
+@phdthesis{Wilson_1963,
+    author                  = {Wilson, R. B.},
+    title                   = {A Simplicial Algorithm for Concave Programming},
+    school                  = inst-harvard,
+    address                 = inst-harvard:adr,
+    year                    = 1963,
 }
 
 @article{Xiao_Liu_Yuan_2021a,
