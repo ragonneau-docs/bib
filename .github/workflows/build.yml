@@ -21,7 +21,7 @@ jobs:
           submodules: true
 
       - name: Compile document
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/latex-action@v3
         with:
           root_file: refs.tex
           args: -file-line-error -halt-on-error -interaction=nonstopmode
